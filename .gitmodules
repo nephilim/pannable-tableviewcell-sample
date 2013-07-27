@@ -1,0 +1,4 @@
+[submodule "NPLPannableTableViewCell"]
+	path = NPLPannableTableViewCell
+	url = https://github.com/nephilim/NPLPannableTableViewCell.git
+	branch = master
