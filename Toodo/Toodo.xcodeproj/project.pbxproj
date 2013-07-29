@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6923F37E1574DACC007ACBD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6923F37D1574DACC007ACBD9 /* UIKit.framework */; };
+		6923F3801574DACC007ACBD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6923F37F1574DACC007ACBD9 /* Foundation.framework */; };
+		6923F3821574DACC007ACBD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6923F3811574DACC007ACBD9 /* CoreGraphics.framework */; };
+		69C12DF6157FCE6900C4D23E /* todo-bg-top.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C12DF4157FCE6900C4D23E /* todo-bg-top.png */; };
+		69C3E601157DE31E0043D0EC /* laodan_background_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C3E600157DE31E0043D0EC /* laodan_background_default.png */; };
+		69C3E608157DE9E10043D0EC /* laodan_background_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C3E604157DE9E10043D0EC /* laodan_background_01.png */; };
+		69C3E609157DE9E10043D0EC /* laodan_background_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C3E605157DE9E10043D0EC /* laodan_background_02.png */; };
+		69C3E60A157DE9E10043D0EC /* laodan_background_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C3E606157DE9E10043D0EC /* laodan_background_03.png */; };
+		69C3E60B157DE9E10043D0EC /* laodan_background_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C3E607157DE9E10043D0EC /* laodan_background_07.png */; };
+		C6163CA4175EF8FE00C0F36E /* hubble-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6163CA3175EF8FE00C0F36E /* hubble-icon@2x.png */; };
+		C6163CA6175F186500C0F36E /* hubble-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C6163CA5175F186500C0F36E /* hubble-icon.png */; };
+		C65EC3FC17A137C3006E3486 /* NPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65EC3E817A137C3006E3486 /* NPLViewController.m */; };
+		C65EC3FF17A137C3006E3486 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C65EC3ED17A137C3006E3486 /* main.m */; };
+		C65EC40017A137C3006E3486 /* NPLInMemoryTodoList.m in Sources */ = {isa = PBXBuildFile; fileRef = C65EC3F017A137C3006E3486 /* NPLInMemoryTodoList.m */; };
+		C65EC40117A137C3006E3486 /* NPLTodo.m in Sources */ = {isa = PBXBuildFile; fileRef = C65EC3F217A137C3006E3486 /* NPLTodo.m */; };
+		C65EC40217A137C3006E3486 /* NPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C65EC3F617A137C3006E3486 /* NPLAppDelegate.m */; };
+		C65EC40317A137C3006E3486 /* Toodo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C65EC3F717A137C3006E3486 /* Toodo-Info.plist */; };
+		C65EC40417A137C3006E3486 /* NPLZoomableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C65EC3FB17A137C3006E3486 /* NPLZoomableTableView.m */; };
+		C6ADD1F417A1398600CDF305 /* NPLTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ADD1F017A1398600CDF305 /* NPLTableHeaderView.xib */; };
+		C6ADD1F517A1398600CDF305 /* NPLTodoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ADD1F117A1398600CDF305 /* NPLTodoTableCell.xib */; };
+		C6ADD1F617A1398600CDF305 /* NPLTodoTableCellMedium.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ADD1F217A1398600CDF305 /* NPLTodoTableCellMedium.xib */; };
+		C6ADD1F717A1398600CDF305 /* NPLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ADD1F317A1398600CDF305 /* NPLViewController.xib */; };
+		C6ADD1FA17A139A700CDF305 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6ADD1F817A139A700CDF305 /* InfoPlist.strings */; };
+		C6D3188B179FE4B900BDBEF9 /* libNPLPannableTableViewCell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D3188A179FE4B900BDBEF9 /* libNPLPannableTableViewCell.a */; };
+		C6DA209F175791BE00C0F461 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6DA209E175791BE00C0F461 /* Default-568h@2x.png */; };
+		C6DA20A1175794DF00C0F461 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6DA20A0175794DF00C0F461 /* QuartzCore.framework */; };
+		C6DA20AB1757AD6900C0F461 /* toodo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C6DA20A91757AB5500C0F461 /* toodo-icon.png */; };
+		C6DA20AC1757AD7000C0F461 /* toodo-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6DA20A71757AA8400C0F461 /* toodo-icon@2x.png */; };
+		C6F49C7D17588885009D8224 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = C6F49C7C17588885009D8224 /* checked.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6923F3791574DACC007ACBD9 /* Toodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6923F37D1574DACC007ACBD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6923F37F1574DACC007ACBD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6923F3811574DACC007ACBD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		69C12DF4157FCE6900C4D23E /* todo-bg-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "todo-bg-top.png"; sourceTree = "<group>"; };
+		69C3E600157DE31E0043D0EC /* laodan_background_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laodan_background_default.png; sourceTree = "<group>"; };
+		69C3E604157DE9E10043D0EC /* laodan_background_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laodan_background_01.png; sourceTree = "<group>"; };
+		69C3E605157DE9E10043D0EC /* laodan_background_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laodan_background_02.png; sourceTree = "<group>"; };
+		69C3E606157DE9E10043D0EC /* laodan_background_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laodan_background_03.png; sourceTree = "<group>"; };
+		69C3E607157DE9E10043D0EC /* laodan_background_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laodan_background_07.png; sourceTree = "<group>"; };
+		C6163CA3175EF8FE00C0F36E /* hubble-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hubble-icon@2x.png"; sourceTree = "<group>"; };
+		C6163CA5175F186500C0F36E /* hubble-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hubble-icon.png"; sourceTree = "<group>"; };
+		C65EC3E717A137C3006E3486 /* NPLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLViewController.h; sourceTree = "<group>"; };
+		C65EC3E817A137C3006E3486 /* NPLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLViewController.m; sourceTree = "<group>"; };
+		C65EC3ED17A137C3006E3486 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C65EC3EF17A137C3006E3486 /* NPLInMemoryTodoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLInMemoryTodoList.h; sourceTree = "<group>"; };
+		C65EC3F017A137C3006E3486 /* NPLInMemoryTodoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLInMemoryTodoList.m; sourceTree = "<group>"; };
+		C65EC3F117A137C3006E3486 /* NPLTodo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLTodo.h; sourceTree = "<group>"; };
+		C65EC3F217A137C3006E3486 /* NPLTodo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLTodo.m; sourceTree = "<group>"; };
+		C65EC3F317A137C3006E3486 /* NPLTodoDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLTodoDataAccess.h; sourceTree = "<group>"; };
+		C65EC3F417A137C3006E3486 /* NPLTodoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLTodoManager.h; sourceTree = "<group>"; };
+		C65EC3F517A137C3006E3486 /* NPLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLAppDelegate.h; sourceTree = "<group>"; };
+		C65EC3F617A137C3006E3486 /* NPLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLAppDelegate.m; sourceTree = "<group>"; };
+		C65EC3F717A137C3006E3486 /* Toodo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Toodo-Info.plist"; sourceTree = "<group>"; };
+		C65EC3F817A137C3006E3486 /* Toodo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toodo-Prefix.pch"; sourceTree = "<group>"; };
+		C65EC3FA17A137C3006E3486 /* NPLZoomableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLZoomableTableView.h; sourceTree = "<group>"; };
+		C65EC3FB17A137C3006E3486 /* NPLZoomableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLZoomableTableView.m; sourceTree = "<group>"; };
+		C6ADD1F017A1398600CDF305 /* NPLTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPLTableHeaderView.xib; sourceTree = "<group>"; };
+		C6ADD1F117A1398600CDF305 /* NPLTodoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPLTodoTableCell.xib; sourceTree = "<group>"; };
+		C6ADD1F217A1398600CDF305 /* NPLTodoTableCellMedium.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPLTodoTableCellMedium.xib; sourceTree = "<group>"; };
+		C6ADD1F317A1398600CDF305 /* NPLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPLViewController.xib; sourceTree = "<group>"; };
+		C6ADD1F917A139A700CDF305 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6D3188A179FE4B900BDBEF9 /* libNPLPannableTableViewCell.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNPLPannableTableViewCell.a; path = "../../pannable-cell/NPLPannableTableViewCell/build/Release-iphoneos/libNPLPannableTableViewCell.a"; sourceTree = "<group>"; };
+		C6DA209E175791BE00C0F461 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C6DA20A0175794DF00C0F461 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C6DA20A71757AA8400C0F461 /* toodo-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toodo-icon@2x.png"; sourceTree = "<group>"; };
+		C6DA20A91757AB5500C0F461 /* toodo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toodo-icon.png"; sourceTree = "<group>"; };
+		C6F49C7C17588885009D8224 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6923F3761574DACC007ACBD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D3188B179FE4B900BDBEF9 /* libNPLPannableTableViewCell.a in Frameworks */,
+				C6DA20A1175794DF00C0F461 /* QuartzCore.framework in Frameworks */,
+				6923F37E1574DACC007ACBD9 /* UIKit.framework in Frameworks */,
+				6923F3801574DACC007ACBD9 /* Foundation.framework in Frameworks */,
+				6923F3821574DACC007ACBD9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6923F36E1574DACC007ACBD9 = {
+			isa = PBXGroup;
+			children = (
+				C6DA209E175791BE00C0F461 /* Default-568h@2x.png */,
+				69D6EE26157C459300402B75 /* Resource */,
+				C65EC3E517A137C3006E3486 /* src */,
+				6923F37C1574DACC007ACBD9 /* Frameworks */,
+				6923F37A1574DACC007ACBD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6923F37A1574DACC007ACBD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6923F3791574DACC007ACBD9 /* Toodo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6923F37C1574DACC007ACBD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6D3188A179FE4B900BDBEF9 /* libNPLPannableTableViewCell.a */,
+				C6DA20A0175794DF00C0F461 /* QuartzCore.framework */,
+				6923F37D1574DACC007ACBD9 /* UIKit.framework */,
+				6923F37F1574DACC007ACBD9 /* Foundation.framework */,
+				6923F3811574DACC007ACBD9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69D6EE26157C459300402B75 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C6ADD1F817A139A700CDF305 /* InfoPlist.strings */,
+				C6DA20A91757AB5500C0F461 /* toodo-icon.png */,
+				C6DA20A71757AA8400C0F461 /* toodo-icon@2x.png */,
+				C6ADD1EF17A1398600CDF305 /* nib */,
+				69D6EE2A157C466300402B75 /* sound */,
+				69D6EE28157C459B00402B75 /* images */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		69D6EE28157C459B00402B75 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C6163CA3175EF8FE00C0F36E /* hubble-icon@2x.png */,
+				C6163CA5175F186500C0F36E /* hubble-icon.png */,
+				C6F49C7C17588885009D8224 /* checked.png */,
+				69C3E604157DE9E10043D0EC /* laodan_background_01.png */,
+				69C3E605157DE9E10043D0EC /* laodan_background_02.png */,
+				69C3E606157DE9E10043D0EC /* laodan_background_03.png */,
+				69C3E607157DE9E10043D0EC /* laodan_background_07.png */,
+				69C3E600157DE31E0043D0EC /* laodan_background_default.png */,
+				69C12DF4157FCE6900C4D23E /* todo-bg-top.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		69D6EE2A157C466300402B75 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
+		C65EC3E517A137C3006E3486 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C65EC3EE17A137C3006E3486 /* Model */,
+				C65EC3F917A137C3006E3486 /* View */,
+				C65EC3E617A137C3006E3486 /* Controller */,
+				C65EC3ED17A137C3006E3486 /* main.m */,
+				C65EC3F517A137C3006E3486 /* NPLAppDelegate.h */,
+				C65EC3F617A137C3006E3486 /* NPLAppDelegate.m */,
+				C65EC3F717A137C3006E3486 /* Toodo-Info.plist */,
+				C65EC3F817A137C3006E3486 /* Toodo-Prefix.pch */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C65EC3E617A137C3006E3486 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C65EC3E717A137C3006E3486 /* NPLViewController.h */,
+				C65EC3E817A137C3006E3486 /* NPLViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C65EC3EE17A137C3006E3486 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C65EC3EF17A137C3006E3486 /* NPLInMemoryTodoList.h */,
+				C65EC3F017A137C3006E3486 /* NPLInMemoryTodoList.m */,
+				C65EC3F117A137C3006E3486 /* NPLTodo.h */,
+				C65EC3F217A137C3006E3486 /* NPLTodo.m */,
+				C65EC3F317A137C3006E3486 /* NPLTodoDataAccess.h */,
+				C65EC3F417A137C3006E3486 /* NPLTodoManager.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C65EC3F917A137C3006E3486 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C65EC3FA17A137C3006E3486 /* NPLZoomableTableView.h */,
+				C65EC3FB17A137C3006E3486 /* NPLZoomableTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6ADD1EF17A1398600CDF305 /* nib */ = {
+			isa = PBXGroup;
+			children = (
+				C6ADD1F017A1398600CDF305 /* NPLTableHeaderView.xib */,
+				C6ADD1F117A1398600CDF305 /* NPLTodoTableCell.xib */,
+				C6ADD1F217A1398600CDF305 /* NPLTodoTableCellMedium.xib */,
+				C6ADD1F317A1398600CDF305 /* NPLViewController.xib */,
+			);
+			path = nib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6923F3781574DACC007ACBD9 /* Toodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6923F3971574DACC007ACBD9 /* Build configuration list for PBXNativeTarget "Toodo" */;
+			buildPhases = (
+				6923F3751574DACC007ACBD9 /* Sources */,
+				6923F3761574DACC007ACBD9 /* Frameworks */,
+				6923F3771574DACC007ACBD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toodo;
+			productName = Toodo;
+			productReference = 6923F3791574DACC007ACBD9 /* Toodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6923F3701574DACC007ACBD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NPL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = YakShavingLocus;
+			};
+			buildConfigurationList = 6923F3731574DACC007ACBD9 /* Build configuration list for PBXProject "Toodo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6923F36E1574DACC007ACBD9;
+			productRefGroup = 6923F37A1574DACC007ACBD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6923F3781574DACC007ACBD9 /* Toodo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6923F3771574DACC007ACBD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C3E601157DE31E0043D0EC /* laodan_background_default.png in Resources */,
+				69C3E608157DE9E10043D0EC /* laodan_background_01.png in Resources */,
+				69C3E609157DE9E10043D0EC /* laodan_background_02.png in Resources */,
+				69C3E60A157DE9E10043D0EC /* laodan_background_03.png in Resources */,
+				69C3E60B157DE9E10043D0EC /* laodan_background_07.png in Resources */,
+				69C12DF6157FCE6900C4D23E /* todo-bg-top.png in Resources */,
+				C6DA209F175791BE00C0F461 /* Default-568h@2x.png in Resources */,
+				C6DA20AB1757AD6900C0F461 /* toodo-icon.png in Resources */,
+				C6DA20AC1757AD7000C0F461 /* toodo-icon@2x.png in Resources */,
+				C6F49C7D17588885009D8224 /* checked.png in Resources */,
+				C6163CA4175EF8FE00C0F36E /* hubble-icon@2x.png in Resources */,
+				C6163CA6175F186500C0F36E /* hubble-icon.png in Resources */,
+				C65EC40317A137C3006E3486 /* Toodo-Info.plist in Resources */,
+				C6ADD1F417A1398600CDF305 /* NPLTableHeaderView.xib in Resources */,
+				C6ADD1F517A1398600CDF305 /* NPLTodoTableCell.xib in Resources */,
+				C6ADD1F617A1398600CDF305 /* NPLTodoTableCellMedium.xib in Resources */,
+				C6ADD1F717A1398600CDF305 /* NPLViewController.xib in Resources */,
+				C6ADD1FA17A139A700CDF305 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6923F3751574DACC007ACBD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65EC3FC17A137C3006E3486 /* NPLViewController.m in Sources */,
+				C65EC3FF17A137C3006E3486 /* main.m in Sources */,
+				C65EC40017A137C3006E3486 /* NPLInMemoryTodoList.m in Sources */,
+				C65EC40117A137C3006E3486 /* NPLTodo.m in Sources */,
+				C65EC40217A137C3006E3486 /* NPLAppDelegate.m in Sources */,
+				C65EC40417A137C3006E3486 /* NPLZoomableTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6ADD1F817A139A700CDF305 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6ADD1F917A139A700CDF305 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6923F3951574DACC007ACBD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6923F3961574DACC007ACBD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6923F3981574DACC007ACBD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/Toodo-Prefix.pch";
+				INFOPLIST_FILE = "src/Toodo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "${SRCROOT}/../NPLPannableTableViewCell/NPLPannableTableViewCell";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6923F3991574DACC007ACBD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/Toodo-Prefix.pch";
+				INFOPLIST_FILE = "src/Toodo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "${SRCROOT}/../NPLPannableTableViewCell/NPLPannableTableViewCell";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6923F3731574DACC007ACBD9 /* Build configuration list for PBXProject "Toodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6923F3951574DACC007ACBD9 /* Debug */,
+				6923F3961574DACC007ACBD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6923F3971574DACC007ACBD9 /* Build configuration list for PBXNativeTarget "Toodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6923F3981574DACC007ACBD9 /* Debug */,
+				6923F3991574DACC007ACBD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6923F3701574DACC007ACBD9 /* Project object */;
+}
