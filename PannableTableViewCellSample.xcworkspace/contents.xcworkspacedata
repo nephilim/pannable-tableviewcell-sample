@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PannableTableViewSample/PannableTableViewSample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NPLPannableTableViewCell/NPLPannableTableViewCell.xcodeproj">
    </FileRef>
 </Workspace>
