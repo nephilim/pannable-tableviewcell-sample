@@ -10,7 +10,6 @@
 #import "NPLPannableTableViewCell.h"
 
 #define TABLEVIEWCELL_COUNT 100
-#define TABLEVIEW_ID @"sample-tableview"
 #define PANNABLE_TABLEVIEWCELL_REUSE_ID @"pannable-cell"
 
 @interface NPLViewController : UIViewController

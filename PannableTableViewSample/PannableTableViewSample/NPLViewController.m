@@ -8,7 +8,6 @@
 
 #import "NPLViewController.h"
 
-
 @interface NPLViewController (Private)
 
 - (UIView*)loadCellForeground;
@@ -39,10 +38,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return cellHeight;
-}
-
 // load uiviews for tableviewcell's foreground/background
 
 - (UIView*)loadCellForeground {
@@ -57,11 +52,15 @@
                                         options:nil] objectAtIndex:1];
 }
 
+#pragma mark - UITableView delegate/datasource
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return cellHeight;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return TABLEVIEWCELL_COUNT;
 }
-
-
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NPLPannableTableViewCell* pannableCell = nil;
@@ -74,8 +73,8 @@
                                                                       background:background
                                                                       openToPosX:0
                                                                      closeToPosX:0
-                                                             tableViewIdentifier:TABLEVIEW_ID];
-        
+                                                                       tableView:self.tableView
+                                                                         groupId:AUTOGENERATE_GROUP_ID];
         // set block to perform before opening/after closing cell
         [pannableCell setPerformBeforeOpening:^(NPLPannableTableViewCell* cell){
             NSLog(@"cell is about to be opened.");
@@ -83,19 +82,16 @@
         [pannableCell setPerformAfterClosing:^(NPLPannableTableViewCell* cell) {
             NSLog(@"cell is just closed");
         }];
+    } else {
+        [pannableCell resetToInitPositionAt:indexPath ];
     }
-    
+
     // Databinding
     /*
-    NPLTodo* todoItem = [todoList todoAtIndex:indexPath.row];
-    //    cell.textLabel.text = todoItem.title;
-    //    cell.detailTextLabel.text = todoItem.description;
-    UILabel* title = (UILabel*)[cell viewWithTag:kTitleTag];
-    title.text = todoItem.title;
-    
     UILabel* description = (UILabel*)[cell viewWithTag:kDescriptionTag];
-    description.text = todoItem.description;
+    description.text = myItem.description;
     */
+    
     return pannableCell;
 }
 
