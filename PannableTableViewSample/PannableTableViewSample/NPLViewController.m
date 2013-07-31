@@ -8,6 +8,8 @@
 
 #import "NPLViewController.h"
 
+#define TAG_NO_INDEXNUMBER 9
+
 @interface NPLViewController (Private)
 
 - (UIView*)loadCellForeground;
@@ -87,11 +89,9 @@
     }
 
     // Databinding
-    /*
-    UILabel* description = (UILabel*)[cell viewWithTag:kDescriptionTag];
-    description.text = myItem.description;
-    */
-    
+    UILabel *indexNumber = (UILabel*)[pannableCell.panningForegroundView viewWithTag:TAG_NO_INDEXNUMBER];
+    indexNumber.text = [NSString stringWithFormat:@"%d", indexPath.row];
+
     return pannableCell;
 }
 

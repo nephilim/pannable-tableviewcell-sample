@@ -40,7 +40,7 @@
 		C6B3CDA917A516C200FE812B /* NPLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPLViewController.h; sourceTree = "<group>"; };
 		C6B3CDAA17A516C200FE812B /* NPLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPLViewController.m; sourceTree = "<group>"; };
 		C6B3CDAD17A516C200FE812B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NPLViewController.xib; sourceTree = "<group>"; };
-		C6B3CDB417A5177800FE812B /* libNPLPannableTableViewCell.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libNPLPannableTableViewCell.a; path = "../NPLPannableTableViewCell/build/Release-iphoneos/libNPLPannableTableViewCell.a"; sourceTree = "<group>"; };
+		C6B3CDB417A5177800FE812B /* libNPLPannableTableViewCell.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNPLPannableTableViewCell.a; path = "../NPLPannableTableViewCell/build/Release-iphoneos/libNPLPannableTableViewCell.a"; sourceTree = SOURCE_ROOT; };
 		C6B3CDB617A54B0F00FE812B /* NPLTodoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPLTodoTableCell.xib; sourceTree = "<group>"; };
 		C6B3CDB817A5FADD00FE812B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -313,6 +313,7 @@
 				C6B3CDB317A516C200FE812B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
