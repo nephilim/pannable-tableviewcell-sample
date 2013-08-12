@@ -7,17 +7,40 @@
 //
 
 #import "NPLAppDelegate.h"
-
-#import "NPLViewController.h"
+#import "NPLBasicTableViewController.h"
+#import "NPLViewControllerList.h"
+#import "NPLTwoTableViewController.h"
+#import "NPLManyCellsViewController.h"
 
 @implementation NPLAppDelegate
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[NPLViewController alloc] initWithNibName:@"NPLViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+
+    // navigation controller setting
+    UIViewController *rootViewController = [[NPLBasicTableViewController alloc] initWithNibName:@"NPLViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+
+    UIViewController *twoTableViewCtrl = [[NPLTwoTableViewController alloc]
+            initWithNibName:@"NPLTwoTableViewController"
+                                                                           bundle:nil];
+    UIViewController *manyCellsViewCtrl = [[NPLManyCellsViewController alloc]
+            initWithNibName:@"NPLManyCellsViewController"
+                                                                           bundle:nil];
+
+    NPLViewControllerList *viewControllers = [NPLViewControllerList sharedInstance];
+
+    [viewControllers setViewControllerForKey:KEY_TWOTABLE_VIEWCTRLER
+                              viewController:twoTableViewCtrl];
+    [viewControllers setViewControllerForKey:KEY_MANYCELLS_VIEWCTRLER
+                              viewController:manyCellsViewCtrl];
+    navController.toolbarHidden = NO;
+    navController.navigationBarHidden = YES;
+
+    [[self window] setRootViewController:navController];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -1,23 +1,26 @@
 //
-//  NPLViewController.m
+//  NPLBasicTableViewController.m
 //  PannableTableViewSample
 //
 //  Created by Nephilim on 13. 7. 28..
 //  Copyright (c) 2013년 Dongwook Lee. All rights reserved.
 //
 
-#import "NPLViewController.h"
+#import "NPLBasicTableViewController.h"
+#import "NPLViewControllerList.h"
 
 #define TAG_NO_INDEXNUMBER 9
 
-@interface NPLViewController (Private)
+@interface NPLBasicTableViewController (Private)
 
 - (UIView*)loadCellForeground;
 - (UIView*)loadCellBackground;
 
+- (void)prepareToolbar;
+
 @end
 
-@implementation NPLViewController {
+@implementation NPLBasicTableViewController {
     CGFloat cellHeight;
 }
 
@@ -33,6 +36,41 @@
     CGFloat bgCellHeight = [self loadCellBackground].bounds.size.height;
     cellHeight = fmax(fgCellHeight, bgCellHeight);
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    // toolbar
+    UIBarButtonItem *twoTableBtn = [[UIBarButtonItem alloc] initWithTitle:@"Two-Tables"
+                                                                    style:UIBarButtonItemStyleBordered
+                                                                   target:self
+                                                                   action:@selector(openTwoTableViewController)];
+    UIBarButtonItem *manyCellsBtn = [[UIBarButtonItem alloc] initWithTitle:@"Many-Cells"
+                                                                     style:UIBarButtonItemStyleBordered
+                                                                    target:self
+                                                                    action:@selector(openManyCellsViewController)];
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc]
+            initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                 target:nil
+                                 action:nil];
+    [self setToolbarItems:[NSArray arrayWithObjects:flexibleSpace, twoTableBtn, flexibleSpace, manyCellsBtn,
+                    flexibleSpace, nil]];
+}
+
+- (void)openTwoTableViewController {
+    [self.navigationController popViewControllerAnimated:NO];
+
+    NPLViewControllerList *viewControllerList = [NPLViewControllerList sharedInstance];
+    UIViewController *twoTableViewCtrl = [viewControllerList viewControllerForKey:KEY_TWOTABLE_VIEWCTRLER];
+    [self.navigationController pushViewController:twoTableViewCtrl animated:YES];
+}
+
+- (void)openManyCellsViewController {
+    [self.navigationController popViewControllerAnimated:NO];
+
+    NPLViewControllerList *viewControllerList = [NPLViewControllerList sharedInstance];
+    UIViewController *manyCellsViewCtrl = [viewControllerList viewControllerForKey:KEY_MANYCELLS_VIEWCTRLER];
+    [self.navigationController pushViewController:manyCellsViewCtrl animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -85,7 +123,7 @@
             NSLog(@"cell is just closed");
         }];
     } else {
-        [pannableCell resetToInitPositionAt:indexPath ];
+        [pannableCell resetToInitPositionAt:indexPath];
     }
 
     // Databinding

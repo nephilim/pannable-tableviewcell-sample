@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46A05804302DC5A0413398D5 /* NPLTwoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A0509D7927C08FD0F4AC78 /* NPLTwoTableViewController.xib */; };
+		46A05ABE1C799DB2957D9821 /* NPLBasicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A05AF20662F6E2C445E68F /* NPLBasicTableViewController.xib */; };
+		46A05B4D2473142636E0D9CE /* NPLViewControllerList.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A05B4CE49F05F5EDE746EB /* NPLViewControllerList.m */; };
+		46A05DB19B52293BA1DA341A /* NPLTwoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A056ACA8963FC8D1016130 /* NPLTwoTableViewController.m */; };
+		46A05E43E52B7EA6C5586AC6 /* NPLBasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A05A3EF0BA304E9C70475B /* NPLBasicTableViewController.m */; };
 		C6B3CD9217A516C200FE812B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B3CD9117A516C200FE812B /* UIKit.framework */; };
 		C6B3CD9417A516C200FE812B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B3CD9317A516C200FE812B /* Foundation.framework */; };
 		C6B3CD9617A516C200FE812B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B3CD9517A516C200FE812B /* CoreGraphics.framework */; };
@@ -16,14 +21,22 @@
 		C6B3CDA417A516C200FE812B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B3CDA317A516C200FE812B /* Default.png */; };
 		C6B3CDA617A516C200FE812B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B3CDA517A516C200FE812B /* Default@2x.png */; };
 		C6B3CDA817A516C200FE812B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B3CDA717A516C200FE812B /* Default-568h@2x.png */; };
-		C6B3CDAB17A516C200FE812B /* NPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B3CDAA17A516C200FE812B /* NPLViewController.m */; };
-		C6B3CDAE17A516C200FE812B /* NPLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B3CDAC17A516C200FE812B /* NPLViewController.xib */; };
 		C6B3CDB517A5177800FE812B /* libNPLPannableTableViewCell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B3CDB417A5177800FE812B /* libNPLPannableTableViewCell.a */; };
 		C6B3CDB717A54B0F00FE812B /* NPLTodoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B3CDB617A54B0F00FE812B /* NPLTodoTableCell.xib */; };
 		C6B3CDB917A5FADD00FE812B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B3CDB817A5FADD00FE812B /* QuartzCore.framework */; };
+		C6F2198817B8805F009B9943 /* NPLManyCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F2198617B8805F009B9943 /* NPLManyCellsViewController.m */; };
+		C6F2198917B8805F009B9943 /* NPLManyCellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F2198717B8805F009B9943 /* NPLManyCellsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46A0509D7927C08FD0F4AC78 /* NPLTwoTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NPLTwoTableViewController.xib; sourceTree = "<group>"; };
+		46A05101947EBEB97C1A59D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NPLBasicTableViewController.xib; sourceTree = "<group>"; };
+		46A05451D72A9A12B0B4F982 /* NPLViewControllerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLViewControllerList.h; sourceTree = "<group>"; };
+		46A054FD1FB9367F947B8645 /* NPLBasicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLBasicTableViewController.h; sourceTree = "<group>"; };
+		46A0553D752455E6D5CD096B /* NPLTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLTwoTableViewController.h; sourceTree = "<group>"; };
+		46A056ACA8963FC8D1016130 /* NPLTwoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLTwoTableViewController.m; sourceTree = "<group>"; };
+		46A05A3EF0BA304E9C70475B /* NPLBasicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLBasicTableViewController.m; sourceTree = "<group>"; };
+		46A05B4CE49F05F5EDE746EB /* NPLViewControllerList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLViewControllerList.m; sourceTree = "<group>"; };
 		C6B3CD8E17A516C200FE812B /* PannableTableViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PannableTableViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B3CD9117A516C200FE812B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C6B3CD9317A516C200FE812B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,12 +50,12 @@
 		C6B3CDA317A516C200FE812B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C6B3CDA517A516C200FE812B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C6B3CDA717A516C200FE812B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		C6B3CDA917A516C200FE812B /* NPLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPLViewController.h; sourceTree = "<group>"; };
-		C6B3CDAA17A516C200FE812B /* NPLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPLViewController.m; sourceTree = "<group>"; };
-		C6B3CDAD17A516C200FE812B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NPLViewController.xib; sourceTree = "<group>"; };
 		C6B3CDB417A5177800FE812B /* libNPLPannableTableViewCell.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNPLPannableTableViewCell.a; path = "../NPLPannableTableViewCell/build/Release-iphoneos/libNPLPannableTableViewCell.a"; sourceTree = SOURCE_ROOT; };
 		C6B3CDB617A54B0F00FE812B /* NPLTodoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPLTodoTableCell.xib; sourceTree = "<group>"; };
 		C6B3CDB817A5FADD00FE812B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C6F2198517B8805F009B9943 /* NPLManyCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLManyCellsViewController.h; sourceTree = "<group>"; };
+		C6F2198617B8805F009B9943 /* NPLManyCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLManyCellsViewController.m; sourceTree = "<group>"; };
+		C6F2198717B8805F009B9943 /* NPLManyCellsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPLManyCellsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,13 +106,13 @@
 		C6B3CD9717A516C200FE812B /* PannableTableViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				C6FB97BE17B8C7A800031FF1 /* nib */,
+				C6FB97BD17B8C72E00031FF1 /* Controller */,
 				C6B3CDA017A516C200FE812B /* NPLAppDelegate.h */,
 				C6B3CDA117A516C200FE812B /* NPLAppDelegate.m */,
-				C6B3CDA917A516C200FE812B /* NPLViewController.h */,
-				C6B3CDAA17A516C200FE812B /* NPLViewController.m */,
-				C6B3CDAC17A516C200FE812B /* NPLViewController.xib */,
-				C6B3CDB617A54B0F00FE812B /* NPLTodoTableCell.xib */,
 				C6B3CD9817A516C200FE812B /* Supporting Files */,
+				46A05B4CE49F05F5EDE746EB /* NPLViewControllerList.m */,
+				46A05451D72A9A12B0B4F982 /* NPLViewControllerList.h */,
 			);
 			path = PannableTableViewSample;
 			sourceTree = "<group>";
@@ -116,6 +129,30 @@
 				C6B3CDA717A516C200FE812B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6FB97BD17B8C72E00031FF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6F2198517B8805F009B9943 /* NPLManyCellsViewController.h */,
+				C6F2198617B8805F009B9943 /* NPLManyCellsViewController.m */,
+				46A056ACA8963FC8D1016130 /* NPLTwoTableViewController.m */,
+				46A0553D752455E6D5CD096B /* NPLTwoTableViewController.h */,
+				46A05A3EF0BA304E9C70475B /* NPLBasicTableViewController.m */,
+				46A054FD1FB9367F947B8645 /* NPLBasicTableViewController.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C6FB97BE17B8C7A800031FF1 /* nib */ = {
+			isa = PBXGroup;
+			children = (
+				C6F2198717B8805F009B9943 /* NPLManyCellsViewController.xib */,
+				46A0509D7927C08FD0F4AC78 /* NPLTwoTableViewController.xib */,
+				46A05AF20662F6E2C445E68F /* NPLBasicTableViewController.xib */,
+				C6B3CDB617A54B0F00FE812B /* NPLTodoTableCell.xib */,
+			);
+			name = nib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +211,10 @@
 				C6B3CDA417A516C200FE812B /* Default.png in Resources */,
 				C6B3CDA617A516C200FE812B /* Default@2x.png in Resources */,
 				C6B3CDA817A516C200FE812B /* Default-568h@2x.png in Resources */,
-				C6B3CDAE17A516C200FE812B /* NPLViewController.xib in Resources */,
 				C6B3CDB717A54B0F00FE812B /* NPLTodoTableCell.xib in Resources */,
+				C6F2198917B8805F009B9943 /* NPLManyCellsViewController.xib in Resources */,
+				46A05804302DC5A0413398D5 /* NPLTwoTableViewController.xib in Resources */,
+				46A05ABE1C799DB2957D9821 /* NPLBasicTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,27 +227,30 @@
 			files = (
 				C6B3CD9E17A516C200FE812B /* main.m in Sources */,
 				C6B3CDA217A516C200FE812B /* NPLAppDelegate.m in Sources */,
-				C6B3CDAB17A516C200FE812B /* NPLViewController.m in Sources */,
+				46A05B4D2473142636E0D9CE /* NPLViewControllerList.m in Sources */,
+				C6F2198817B8805F009B9943 /* NPLManyCellsViewController.m in Sources */,
+				46A05DB19B52293BA1DA341A /* NPLTwoTableViewController.m in Sources */,
+				46A05E43E52B7EA6C5586AC6 /* NPLBasicTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		46A05AF20662F6E2C445E68F /* NPLBasicTableViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A05101947EBEB97C1A59D8 /* en */,
+			);
+			name = NPLBasicTableViewController.xib;
+			sourceTree = "<group>";
+		};
 		C6B3CD9A17A516C200FE812B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C6B3CD9B17A516C200FE812B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C6B3CDAC17A516C200FE812B /* NPLViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6B3CDAD17A516C200FE812B /* en */,
-			);
-			name = NPLViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,5 +1,5 @@
 //
-//  NPLViewController.h
+//  NPLBasicTableViewController.h
 //  PannableTableViewSample
 //
 //  Created by Nephilim on 13. 7. 28..
@@ -12,9 +12,12 @@
 #define TABLEVIEWCELL_COUNT 100
 #define PANNABLE_TABLEVIEWCELL_REUSE_ID @"pannable-cell"
 
-@interface NPLViewController : UIViewController
+@interface NPLBasicTableViewController : UIViewController
 <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, retain) IBOutlet UITableView* tableView;
+
+- (void)openTwoTableViewController;
+- (void)openManyCellsViewController;
 
 @end
