@@ -9,7 +9,10 @@
 #import "NPLBasicTableViewController.h"
 #import "NPLViewControllerList.h"
 
-#define TAG_NO_INDEXNUMBER 9
+#define TABLEVIEWCELL_COUNT 100
+#define PANNABLE_TABLEVIEWCELL_REUSE_ID @"pannable-cell:basic-table"
+
+#define TAG_NO_INDEX_LABEL 9
 
 @interface NPLBasicTableViewController (Private)
 
@@ -104,7 +107,7 @@
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NPLPannableTableViewCell* pannableCell = nil;
-    pannableCell = [self.tableView dequeueReusableCellWithIdentifier:PANNABLE_TABLEVIEWCELL_REUSE_ID];
+    pannableCell = [tableView dequeueReusableCellWithIdentifier:PANNABLE_TABLEVIEWCELL_REUSE_ID];
     if (pannableCell == nil) {
         UIView* foreground = [self loadCellForeground];
         UIView* background = [self loadCellBackground];
@@ -113,7 +116,7 @@
                                                                       background:background
                                                                       openToPosX:0
                                                                      closeToPosX:0
-                                                                       tableView:self.tableView
+                                                                       tableView:tableView
                                                                          groupId:AUTOGENERATE_GROUP_ID];
         // set block to perform before opening/after closing cell
         [pannableCell setPerformBeforeOpening:^(NPLPannableTableViewCell* cell){
@@ -127,7 +130,7 @@
     }
 
     // Databinding
-    UILabel *indexNumber = (UILabel*)[pannableCell.panningForegroundView viewWithTag:TAG_NO_INDEXNUMBER];
+    UILabel *indexNumber = (UILabel*)[pannableCell.panningForegroundView viewWithTag:TAG_NO_INDEX_LABEL];
     indexNumber.text = [NSString stringWithFormat:@"%d", indexPath.row];
 
     return pannableCell;

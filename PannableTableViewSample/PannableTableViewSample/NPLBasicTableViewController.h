@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "NPLPannableTableViewCell.h"
 
-#define TABLEVIEWCELL_COUNT 100
-#define PANNABLE_TABLEVIEWCELL_REUSE_ID @"pannable-cell"
 
 @interface NPLBasicTableViewController : UIViewController
 <UITableViewDelegate, UITableViewDataSource>

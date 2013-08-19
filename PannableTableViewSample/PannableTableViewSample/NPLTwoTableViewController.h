@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "NPLViewControllerList.h"
+#import "NPLPannableTableViewCell.h"
+
 @interface NPLTwoTableViewController : UIViewController
+
+@property(nonatomic, strong) UITableView *tableView1;
+@property(nonatomic, strong) UITableView *tableView2;
+@property(nonatomic) double cellHeight;
 
 @end
