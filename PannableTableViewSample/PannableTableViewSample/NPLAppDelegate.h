@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class NPLViewController;
+@class NPLBasicTableViewController;
 
 @interface NPLAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) NPLViewController *viewController;
 
 @end
